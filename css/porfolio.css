@@ -1,0 +1,206 @@
+html {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif !important;
+    background: black;
+    display: block;
+}
+
+body {
+    background-color: unset;
+    margin-bottom: 60px;
+}
+
+hr {
+    border-top: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+}
+
+.hr20 {
+    width: 20%;
+}
+
+.hr5 {
+    width: 5%;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(9px);
+}
+
+.porfolio-title {
+    display: flex;
+    height: calc(100vh);
+    font-family: 'Bungee Shade', cursive;
+    font-size: 7em;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    transform: rotate(-90deg) translate(5%,5%);
+    position: absolute;
+    font-size: 3.5rem;
+    color: white;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.jobs-h1{
+    top: 140vh;
+    left: -55px;
+}
+
+.cv-h1 {
+    top: 240vh;
+    left: -100px;
+}
+
+.contact-h1 {
+    top: 335vh;
+    left: -49px;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        transform: none;
+        position: initial;
+    }
+    .row{
+        position: relative;
+        font-size: 0.5em;
+    }
+}
+
+/* MENÚ */
+.menu-btn {
+    color: white !important;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 25px;
+    left: 40px;
+}
+
+#menu { 
+    display: none;
+    background-color:#000;
+    opacity: 0.85;
+    color: #fff;
+    position: fixed;
+    top:0;
+    width:100%;
+    height: 100%;
+    transition: all .5s;
+    font-family:'Roboto';
+    z-index: 3;
+}
+  
+#menu:target{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.cerrar{
+    position:absolute;
+    top: 25px;
+    right: 40px;
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.cerrar:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-content {
+    text-align: center;
+    font-size: 3.5rem;
+    display: grid;
+}
+
+.menu-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-content a:hover {
+    color: #ff6347;
+}
+
+.correo {
+    font-size: 1.5rem;
+}
+
+.redes {
+    display: flex;
+    margin: 20px auto 0;
+}
+
+.redes a {
+    margin: 0 50px;
+}
+
+/* JOBS */
+.carousel {
+    margin: 60px 0;
+}
+
+.carousel-indicators {
+    z-index: 1;
+}
+
+.carousel-inner {
+    border-radius: 3px;
+}
+
+/* CV */
+.download-cv {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.download-cv:hover {
+    text-decoration: none;
+    color: #ff6347;
+}
+
+
+/* CONTACT */
+ iframe {
+    padding: 0 15px 15px;
+}
+
+/* FORMS */
+.form-content {
+    background: #1f1f1f;
+    color: #ffffff;
+    opacity: 0.9;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 60px 0;
+}
+
+.form-content form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-content .form-group {
+    width: 50%;
+    padding: 15px;
+}
+    
+video{
+    z-index: 1;
+}
